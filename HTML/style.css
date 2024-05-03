@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+band_name {
+    font-size: 50px;
+    line-height: 64px;
+    color:darkgray;
+    position: absolute; /* Position the image relative to the viewport */
+    top: 0%; /* Position the image at the top */
+    left: 15%; /* Move the image to the center horizontally */
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+    /*background-color:darkgray;*/
+    background-image: url('../media/photos/band_shot_forest_flares2.jpg');
+    background-size: cover; /* Cover the entire container */
+    /*background-position: center center; /* Center the image */
+    /* Optionally, you can add more properties like background-repeat, background-attachment, etc. */
+}
+
+
+.background-img {
+    max-width: 100%;
+    height: auto;
+    top: 0%;
+}
+
+.band-logo {
+    /*box-shadow: 0 0 0 5px white;*/
+    max-width: 70%; /* Ensure the image doesn't exceed its container */
+    position: absolute; /* Position the image relative to the viewport */
+    top: 55%; /* Position the image at the top */
+    left: 50%; /* Move the image to the center horizontally */
+    transform: translateX(-50%); /* Adjust to center horizontally */
+}
+.band-emblem {
+    width: 5%; /* Make the image 50% of its containing element's width */
+    height: auto; /* Maintain the aspect ratio */
+
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    position: absolute; /* Position the image relative to the viewport */
+    top: 10%; /* Position the image at the top */
+    left: 50%; /* Move the image to the center horizontally */
+    transform: translateX(-50%); /* Adjust to center horizontally */
+}
