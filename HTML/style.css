@@ -43,13 +43,18 @@ p {
     margin: 40px 0;
 }
 
+
+
 body {
-    width: 100%;
-    /*background-color:darkgray;*/
     background-image: url('../media/photos/band_shot_forest_flares2.jpg');
     background-size: cover; /* Cover the entire container */
-    /*background-position: center center; /* Center the image */
-    /* Optionally, you can add more properties like background-repeat, background-attachment, etc. */
+}
+body.unique-page {
+    width: 100%;
+    background-color: #222;
+    background-size: cover; /* Cover the entire container */
+    z-index: 1;
+
 }
 
 
@@ -90,6 +95,19 @@ body {
     left: 0; /* Align the navbar to the left */
     width: 100%; /* Set the width to 100% */
     z-index: 999; /* Ensure the navbar appears on top of other content */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+.navbar__links {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: opacity 0.3s ease; /* Add transition for opacity */
+}
+
+.navbar__links:hover {
+    opacity: 0.7; /* Reduce opacity on hover */
 }
 
 .navbar__container {
@@ -131,4 +149,33 @@ body {
 }
 .navbar__toggle {
     height: 40px; /* Adjust the desired height */
+}
+
+.picture-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set the container height to the full viewport height */
+    position: relative; /* Ensure the container is positioned relative to the body */
+    z-index: 999; /* Set a higher z-index than the background to ensure pictures are shown on top */
+
+}
+
+.picture-container img {
+    max-width: 100%;
+    opacity: 0; /* Initially hide images */
+    transition: opacity 0.5s ease; /* Add transition for opacity */
+}
+
+.picture-visible {
+    opacity: 1; /* Show images */
+}
+
+.picture {
+    position: absolute; /* Position the pictures absolutely within the container */
+    top: 0; /* Align the pictures to the top of the container */
+    left: 0; /* Align the pictures to the left of the container */
+    opacity: 0; /* Initially hide images */
+    transition: opacity 0.5s ease; /* Add transition for opacity */
 }
