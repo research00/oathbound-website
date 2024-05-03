@@ -6,14 +6,6 @@
     box-sizing: border-box;
     font-family: 'Spartan', sans-serif;
 }
-band_name {
-    font-size: 50px;
-    line-height: 64px;
-    color:darkgray;
-    position: absolute; /* Position the image relative to the viewport */
-    top: 0%; /* Position the image at the top */
-    left: 15%; /* Move the image to the center horizontally */
-}
 
 h1 {
     font-size: 50px;
@@ -69,6 +61,7 @@ body {
 
 .band-logo {
     /*box-shadow: 0 0 0 5px white;*/
+    
     max-width: 70%; /* Ensure the image doesn't exceed its container */
     position: absolute; /* Position the image relative to the viewport */
     top: 55%; /* Position the image at the top */
@@ -76,12 +69,66 @@ body {
     transform: translateX(-50%); /* Adjust to center horizontally */
 }
 .band-emblem {
-    width: 5%; /* Make the image 50% of its containing element's width */
-    height: auto; /* Maintain the aspect ratio */
-
+    height: 60px;
+    width: auto; /* Make the image 50% of its containing element's width */
+    
     max-width: 100%; /* Ensure the image doesn't exceed its container */
     position: absolute; /* Position the image relative to the viewport */
-    top: 10%; /* Position the image at the top */
-    left: 50%; /* Move the image to the center horizontally */
+    top: 10px; /* Position the image at the top */
+    left: 10%; /* Move the image to the center horizontally */
     transform: translateX(-50%); /* Adjust to center horizontally */
+}
+
+/*new stuff*/
+
+.navbar {
+    height: 80px;
+    background-color: #333; /* Background color of the navbar */
+    padding: 10px 0; /* Add some padding */
+    position: fixed; /* Position the navbar fixed to the top */
+    top: 0; /* Position the navbar at the top */
+    left: 0; /* Align the navbar to the left */
+    width: 100%; /* Set the width to 100% */
+    z-index: 999; /* Ensure the navbar appears on top of other content */
+}
+
+.navbar__container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Align items with space between them */
+    align-items: center; /* Center items vertically */
+    max-width: 1200px; /* Limit the width of the navbar */
+    margin: 0 auto; /* Center the navbar horizontally */
+    padding: 0 20px; /* Add padding to the container */
+}
+
+#navbar__logo {
+    color: #fff; /* Text color of the logo */
+    font-size: 28px; /* Font size of the logo */
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar__menu {
+    list-style: none; /* Remove default list styles */
+    display: flex; /* Use flexbox for layout */
+}
+
+.navbar__item {
+    margin-right: 30px; /* Add spacing between menu items */
+}
+
+.navbar__links {
+    color: #fff; /* Text color of the links */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px;
+}
+
+.navbar__links:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+.navbar--hidden {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.navbar__toggle {
+    height: 40px; /* Adjust the desired height */
 }
