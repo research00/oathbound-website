@@ -132,3 +132,30 @@ body {
 .navbar__toggle {
     height: 40px; /* Adjust the desired height */
 }
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Grid item */
+.grid-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* First grid item */
+.first-item {
+    grid-column: span 2; /* Span two columns */
+}
+
+/* Link styles */
+.grid-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
