@@ -70,6 +70,7 @@ body {
 
     background-size: cover;
     background-position: center;
+    filter: blur(5px);
     z-index: -1; /* Ensure it's behind other content */
 }
 
@@ -85,11 +86,12 @@ body {
 .band-emblem {
     height: 60px;
     width: auto; /* Make the image 50% of its containing element's width */
+    padding-right: 100px;
     
     max-width: 100%; /* Ensure the image doesn't exceed its container */
     position: absolute; /* Position the image relative to the viewport */
     top: 10px; /* Position the image at the top */
-    left: 10%; /* Move the image to the center horizontally */
+    /*left: 2%; /* Move the image to the center horizontally */
     transform: translateX(-50%); /* Adjust to center horizontally */
 }
 
@@ -175,31 +177,20 @@ body {
 
 
 
-/* Grid item */
-.grid-item {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-
+.button {
+    position: fixed;
+    top: 20%; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    padding: 15px 30px; /* Adjust padding as needed */
+    font-size: 18px; /* Adjust font size as needed */
+    background-color: #007bff; /* Example button color */
+    color: #ffffff; /* Example text color */
+    text-decoration: none; /* Remove underline from link */
+    border: none;
+    cursor: pointer;
+    z-index: 1; /* Ensure it's above the background */
+    border-radius: 20px; /* Rounded corners */
 }
-
-/* First grid item */
-.first-item {
-    grid-column: span 2; /* Span two columns */
-}
-
-/* Link styles */
-.grid-item a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
 
 .container {
     display: flex;
