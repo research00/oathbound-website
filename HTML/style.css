@@ -19,7 +19,7 @@ h2 {
     color: whitesmoke;
 }
 .h2-sm {
-    padding-top: 10%;
+    padding-top: 7%;
     font-size: 1rem*1.618;
     line-height: 54px;
     height: 100%;
@@ -96,21 +96,21 @@ body {
     transform: translateX(-50%); /* Adjust to center horizontally */
 }
 .band-emblem {
-    height: 60px;
+    height: 90%;
     width: auto; /* Make the image 50% of its containing element's width */
-    padding-right: 100px;
-    
+    margin-right: auto;
+    padding-right:20px;
     max-width: 100%; /* Ensure the image doesn't exceed its container */
     position: absolute; /* Position the image relative to the viewport */
-    top: 10px; /* Position the image at the top */
-    /*left: 2%; /* Move the image to the center horizontally */
-    transform: translateX(-50%); /* Adjust to center horizontally */
+    top: 5%; /* Position the image at the top */
+    left: 2%; /* Move the image to the center horizontally 
+    /*transform: translateX(-50%); /* Adjust to center horizontally */
 }
 
 /*new stuff*/
 
 .navbar {
-    height: 80px;
+    height: 5%;
     background-color: #333; /* Background color of the navbar */
     padding: 10px 0; /* Add some padding */
     position: fixed; /* Position the navbar fixed to the top */
@@ -125,7 +125,7 @@ body {
 .navbar__links {
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
+    font-size: 1vw;
     transition: opacity 0.3s ease; /* Add transition for opacity */
 }
 
@@ -137,14 +137,15 @@ body {
     display: flex; /* Use flexbox for layout */
     justify-content: space-between; /* Align items with space between them */
     align-items: center; /* Center items vertically */
-    max-width: 1200px; /* Limit the width of the navbar */
+    max-width: 1vw; /* Limit the width of the navbar */
     margin: 0 auto; /* Center the navbar horizontally */
     padding: 0 15px; /* Add padding to the container */
+
 }
 
 #navbar__logo {
     color: #fff; /* Text color of the logo */
-    font-size: 28px; /* Font size of the logo */
+    font-size: 1vw; /* Font size of the logo */
     text-decoration: none; /* Remove underline */
 }
 
@@ -161,7 +162,7 @@ body {
 .navbar__links {
     color: #fff; /* Text color of the links */
     text-decoration: none; /* Remove underline */
-    font-size: 18px;
+    font-size: 1vw;
 }
 
 .navbar__links:hover {
@@ -209,8 +210,8 @@ body {
 
 .button-sm {
     display: block; /* Set display to block */
-    padding: 15px 30px; /* Adjust padding as needed */
-    font-size: 18px; /* Adjust font size as needed */
+    padding: 2% 2%; /* Adjust padding as needed */
+    font-size: 12px; /* Adjust font size as needed */
     /*background-color: #007bff; /* Example button color */
     background-image:  url('../media/photos/AI_photoshoot_link_button.jpg'); ;
     color: #ffffff; /* Example text color */
@@ -229,7 +230,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 40px 20px 15px 20px;
+    /*margin: 40px 20px 15px 20px;*/
 }
 
 .container .heading {
