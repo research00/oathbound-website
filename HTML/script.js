@@ -1,5 +1,5 @@
 // Get the navbar element
-var navbar = document.querySelector('.navbar');
+var nav = document.querySelector('.nav');
 
 // Variable to store the last scroll position
 var lastScrollTop = 0;
@@ -10,9 +10,9 @@ function handleScroll() {
 
     // Add the navbar--hidden class if scrolling down, remove it if scrolling up
     if (scrollTop > lastScrollTop) {
-        navbar.classList.add('navbar--hidden');
+        nav.classList.add('nav--hidden');
     } else {
-        navbar.classList.remove('navbar--hidden');
+        nav.classList.remove('nav--hidden');
     }
 
     // Update the last scroll position
