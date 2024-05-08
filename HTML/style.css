@@ -98,13 +98,12 @@ nav ul li a{
     text-transform: uppercase;
     padding: 7px 13px;
     border-radius: 3px;
-    
 }
 
-a.active,a:hover {
+a.active,
+a:hover {
     background: dimgrey;
     transition: .5s;
-
 }
 
 .checkbtn {
@@ -113,7 +112,7 @@ a.active,a:hover {
     float: right;
     line-height: 80px;
     margin-right: 40px;
-    cursor:pointer;
+    cursor: pointer;
     display: none;
 }
 
@@ -140,7 +139,7 @@ a.active,a:hover {
         height: 100vh;
         background: #1a1a1a;
         top: 80px;
-        left: -100;
+        left: -100%;
         text-align: center;
         transition: all .5s;
     }
@@ -148,20 +147,19 @@ a.active,a:hover {
         display: block;
         margin:50px 0;
         line-height: 30px;
-
     }
     nav ul li a{
         font-size: 20px;
     }
-    a:hover,a.active{
+    a:hover,
+    a.active{
         background: none;
-        color:1a1a1a;
+        color: 1a1a1a;
    
     }
-    #check:checked ~ul{
+    #check:checked ~ ul{
         left:0;
     }
-
 }
 
 
