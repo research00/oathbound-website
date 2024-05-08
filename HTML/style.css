@@ -242,21 +242,6 @@ a:hover {
     border: 4px solid #ffffff;
 }
 
-.button-sm {
-    display: block; /* Set display to block */
-    padding: 2% 2%; /* Adjust padding as needed */
-    font-size: 12px; /* Adjust font size as needed */
-    /*background-color: #007bff; /* Example button color */
-    background-image:  url('../media/photos/AI_photoshoot_link_button.jpg'); ;
-    color: #ffffff; /* Example text color */
-    text-decoration: none; /* Remove underline from link */
-    cursor: pointer;
-    z-index: 1; /* Ensure it's above the background */
-    border-radius: 20px; /* Rounded corners */
-    border: 4px solid #ffffff;
-    text-align: center;
-    height: 100%;
-}
 
 .container {
     display: flex;
@@ -295,3 +280,19 @@ a:hover {
     border: 4px solid #333; /* Dark gray border */
 }
 
+.social-icon {
+    color:#ffffff;
+    transition: color 0.5s;
+    display: block;
+    margin:50px 0;
+    line-height: 30px;
+
+}
+
+.social-icon:hover{
+    background-color: dimgrey;
+}
+.parent-container {
+    text-align: center;
+    font-size: 3rem*1.618;
+}
