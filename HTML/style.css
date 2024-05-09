@@ -35,18 +35,6 @@ h2 {
     align-items: center; /* Center vertically */
     text-align: center; /* Center text within the container */
 }
-/*
-h4 {
-    font-size: 20px;
-    color: whitesmoke;
-}
-
-h6 {
-    font-weight: 700;
-    font-size: 12px;
-}
-*/
-
 
 p {
     font-size: 18px;
@@ -61,8 +49,6 @@ p {
 .section-m1 {
     margin: 40px 0;
 }
-
-
 
 body {
     width: 100%;
@@ -164,8 +150,8 @@ a:hover {
 
     a:hover,
     a.active{
-        background: none;
-        color: 1a1a1a;
+        background: dimgrey;
+        transition: .5s;
     }
 
     #check:checked ~ nav ul{
@@ -179,7 +165,6 @@ a:hover {
 
 .background-img {
     background: url('../media/photos/band_shot_forest_flares2_lite.jpg') no-repeat; /* Path to your image */
-
     width: 100%;
     height: 100vh; /* Set container height to full viewport height */
     background-size: cover;
@@ -188,12 +173,10 @@ a:hover {
 }
 
 .background-img-pictures {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: absolute;
     width: 100%;
-    height: 100%;
-    background-image: url('../media/photos/band_shot_forest_flares2_lite.jpg'); /* Path to your image */
+    height: 100vh;
+    background: url('../media/photos/band_shot_forest_flares2_lite.jpg'); /* Path to your image */
     background-size: cover;
     background-position: center;
     filter: blur(5px);
