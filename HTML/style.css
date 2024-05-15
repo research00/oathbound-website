@@ -289,9 +289,9 @@ a:hover {
 }
 
 .about_us_pictures{
-    border-radius: 10px; /* Apply border-radius to all corners */
-    overflow: hidden; /* Ensure the border-radius is applied properly */
+    align-items: center;
 }
+
 
 .social-icon {
     color:#ffffff;
