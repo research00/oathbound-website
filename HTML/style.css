@@ -12,6 +12,10 @@ a {
     color: white; /* Change link color to white */
     text-decoration: none; /* Remove underline */
 }
+.about_us_p{
+    padding-left: 50px;
+    text-align: center;
+}
 
 h1 {
     font-size: 2rem*1.618;
@@ -184,6 +188,18 @@ a:hover {
     z-index: -1; /* Ensure it's behind other content */
 }
 
+.background-img-about {
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    background: url('../media/photos/band_logo.png'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1; /* Ensure it's behind other content */
+}
+
 .band-logo {
     /*box-shadow: 0 0 0 5px white;*/
     max-width: 70%; /* Ensure the image doesn't exceed its container */
@@ -270,6 +286,11 @@ a:hover {
     overflow: hidden; /* Ensure the border-radius is applied properly */
     margin-bottom: 15px;
     border: 4px solid #333; /* Dark gray border */
+}
+
+.about_us_pictures{
+    border-radius: 10px; /* Apply border-radius to all corners */
+    overflow: hidden; /* Ensure the border-radius is applied properly */
 }
 
 .social-icon {
