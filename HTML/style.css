@@ -13,7 +13,8 @@ a {
     text-decoration: none; /* Remove underline */
 }
 .about_us_p{
-    padding-left: 50px;
+    /*padding-left: 50px;*/
+    left:50%;
     text-align: center;
 }
 
@@ -161,6 +162,7 @@ a:hover {
     #check:checked ~ nav ul{
         left:0;
     }
+
 }
 #check {
     z-index: 2; /* Ensure the checkbox appears above other elements */
