@@ -12,7 +12,7 @@ a {
     color: white; /* Change link color to white */
     text-decoration: none; /* Remove underline */
 }
-.about_us_p{
+.center_p{
     /*padding-left: 50px;*/
     left:50%;
     text-align: center;
