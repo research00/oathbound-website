@@ -11,6 +11,7 @@
 a {
     color: white; /* Change link color to white */
     text-decoration: none; /* Remove underline */
+    font-size: larger;
 }
 .center_p{
     /*padding-left: 50px;*/
