@@ -10,5 +10,9 @@ document.addEventListener('DOMContentLoaded', function() {
             navUl.style.left = '-100%';
         }
     });
+    function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
     
 });
