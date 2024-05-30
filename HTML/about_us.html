@@ -33,7 +33,7 @@
     <div class="center_p">
         <h1>Kalyan Lopez</h1>
         <p>Vocals</p>
-        <div class="popup" onclick="myFunction()">click here to expand
+        <div class="popup" onclick="myFunction(1)">click here to expand
             <span class="popuptext" id="myPopup1">Kalyan's bio goes here</span>
           </div>
     </div>
@@ -44,8 +44,8 @@
     <div class="center_p">
         <h1>Taylor Harper</h1>
         <p>Guitars</p>
-        <div class="popup" onclick="myFunction()">click here to expand
-            <span class="popuptext" id="myPopupTaylor">Taylor's bio goes here</span>
+        <div class="popup" onclick="myFunction(2)">click here to expand
+            <span class="popuptext" id="myPopup2">Taylor's bio goes here</span>
           </div>
     </div>
 
@@ -55,8 +55,8 @@
     <div class="center_p">
         <h1>Viktor Schultz</h1>
         <p>Guitars</p>
-        <div class="popup" onclick="myFunction()">click here to expand
-            <span class="popuptext" id="myPopupViktor">Viktor's bio goes here</span>
+        <div class="popup" onclick="myFunction(3)">click here to expand
+            <span class="popuptext" id="myPopup3">Viktor's bio goes here</span>
           </div>
     </div>
     <div class="container">
@@ -66,8 +66,8 @@
     <div class="center_p">
         <h1>John Padgett III</h1>
         <p>Bass & Backing Vocals</p>
-        <div class="popup" onclick="myFunction()">click here to expand
-            <span class="popuptext" id="myPopupJohn">John's bio goes here</span>
+        <div class="popup" onclick="myFunction(4)">click here to expand
+            <span class="popuptext" id="myPopup4">John's bio goes here</span>
           </div>
     </div>
 
@@ -78,8 +78,8 @@
     <div class="center_p">
         <h1>Rishab Thadani</h1>
         <p>Drums</p>
-        <div class="popup" onclick="myFunction()">click here to expand
-            <span class="popuptext" id="myPopupRishab">Rishab's bio goes here</span>
+        <div class="popup" onclick="myFunction(5)">click here to expand
+            <span class="popuptext" id="myPopup5">Rishab's bio goes here</span>
           </div>
     </div>
 
@@ -88,8 +88,8 @@
     </div>
     <script src="script.js"></script>
     <script>
-    function myFunction() {
-        var popup = document.getElementById("myPopup");
+    function myFunction(n) {
+        var popup = document.getElementById("myPopup"+toString(n));
         popup.classList.toggle("show");
       }
     </script>
