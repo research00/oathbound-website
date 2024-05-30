@@ -10,9 +10,42 @@ document.addEventListener('DOMContentLoaded', function() {
             navUl.style.left = '-100%';
         }
     });
-    function myFunction() {
-        var popup = document.getElementById("myPopup");
-        popup.classList.toggle("show");
-      }
-    
 });
+    document.addEventListener('DOMContentLoaded', function () {
+        var popups = document.querySelectorAll('.popuptext');
+    
+        function togglePopup(popupId) {
+            var popup = document.getElementById(popupId);
+            popup.classList.toggle("show");
+        }
+    
+        function closeAllPopups() {
+            popups.forEach(function(popup) {
+                if (popup.classList.contains('show')) {
+                    popup.classList.remove('show');
+                }
+            });
+        }
+    
+        document.querySelectorAll('.popup').forEach(function(popup, index) {
+            popup.onclick = function(event) {
+                event.stopPropagation();
+                togglePopup("myPopup" + (index + 1));
+            };
+        });
+    
+        document.addEventListener('click', function(event) {
+            var isClickInsidePopup = event.target.closest('.popup');
+            if (!isClickInsidePopup) {
+                closeAllPopups();
+            }
+        });
+    });
+    
+    function myFunction(n) {
+        var popupId = "myPopup" + n;
+        var popup = document.getElementById(popupId);
+        popup.classList.toggle("show");
+    }
+    
+
