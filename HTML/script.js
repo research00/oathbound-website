@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const checkBtn = document.getElementById('check');
     const navUl = document.querySelector('nav ul');
 
+
     checkBtn.addEventListener('change', function() {
         if (this.checked) {
             navUl.style.left = '0';
@@ -9,4 +10,5 @@ document.addEventListener('DOMContentLoaded', function() {
             navUl.style.left = '-100%';
         }
     });
+    
 });

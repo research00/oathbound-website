@@ -31,7 +31,10 @@
     </div>
     
     <div class="center_p">
-        <h1>Kalyan Lopez</h1>
+        <!--<h1>Kalyan Lopez</h1>-->
+        <div class="popup" onclick="myFunction()">Kalyan Lopez (click to expand)
+            <span class="popuptext" id="myPopup">bio goes here</span>
+          </div>
         <p>Vocals</p>
     </div>
     
@@ -72,5 +75,11 @@
         <img srcset="../media/photos/about_us_pictures_mobile/rishab_mobile.jpg 400w, ../media/photos/about_us_pictures_lite/rishab_lite.jpg 800w" sizes="(max-width: 400px) 400px, 800px" alt="Responsive Image">
     </div>
     <script src="script.js"></script>
+    <script>
+    function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+    </script>
 </body>
 </html>
