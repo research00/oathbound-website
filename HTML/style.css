@@ -350,3 +350,17 @@ a:hover {
     from {opacity: 0;}
     to {opacity:1 ;}
   }
+
+.iframe-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+iframe {
+    width: 50%;
+    height: 350px; /* Set the height according to your requirement */
+}
